@@ -17,57 +17,69 @@
   <body>
     <div class="container">
       <div class="hero">
-        <div class="menu">
+        <div class="header">
           <div class="logo">
             <img src="./src/images/logo.jpeg" alt="Logo Netflix" />
           </div>
-          <div class="menu-left">
-            <ul>
-              <li>Início</li>
-              <li>Séries</li>
-              <li>Filmes</li>
-              <li>Bombando</li>
-              <li>Minha lista</li>
-            </ul>
-          </div>
-          <div class="menu-right">
-            <ul>
-              <li><i class="fas fa-search"></i></li>
-              <li><i class="fas fa-bell"></i></li>
-              <li class="user">
-                <img src="./src/images/user.png" alt="Avatar usuário" />
-                <i class="fas fa-sort-down"></i>
-              </li>
-            </ul>
+
+          <div class="menu">
+            <div class="menu-left">
+              <ul>
+                <li>Início</li>
+                <li>Séries</li>
+                <li>Filmes</li>
+                <li>Bombando</li>
+                <li>Minha lista</li>
+              </ul>
+            </div>
+            <div class="menu-right">
+              <ul>
+                <li><i class="fas fa-search"></i></li>
+                <li><i class="fas fa-bell"></i></li>
+                <li class="user">
+                  <img src="src/images/user.png" alt="Avatar usuário" />
+                  <i class="fas fa-sort-down"></i>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
 
-        <main>
-          <!-- Banner -->
-          <div class="banner">
-            <img src="./src/images/banner.png" alt="Banner filme Spiderhead" />
-            <span class="subtitle">bla bla bla bla bla</span>
+        <!-- Banner -->
+        <div class="banner">
+          <img
+            class="poster"
+            src="./src/images/poster.png"
+            alt="Banner filme
+            Spiderhead"
+          />
+          <span class="subtitle">bla bla bla bla bla</span>
 
-            <div class="buttons">
-              <button class="btn_play">
-                <i class="fas fa-play"></i>Assistir
-              </button>
-              <button class="btn_info">
-                <i class="fas fa-info"></i>Mais informações
-              </button>
-            </div>
+          <div class="buttons">
+            <button type="submit" class="btn_play">
+              <i class="fas fa-play"></i>
+
+              Assistir
+            </button>
+            <button class="btn_info">
+              <i class="fas fa-info"></i>Mais informações
+            </button>
           </div>
-          <!-- Fim do Banner -->
+        </div>
+        <!-- Fim do Banner -->
 
-          <!-- Categorias -->
-          <div class="category">
-            <span>Minha lista</span>
+        <!-- Categorias -->
+        <div class="category">
+          <!-- Carousel Minha lista -->
+          <span>Minha lista</span>
+          <div class="slider">
             <div class="carousel">
               <img
                 src="./src/images/minha _lista/poster_01.jpeg"
                 alt="BoJack Horseman"
               />
             </div>
+
             <div class="carousel">
               <img
                 src="./src/images/minha _lista/poster_02.jpeg"
@@ -93,9 +105,14 @@
               />
             </div>
           </div>
+        </div>
 
-          <div class="category">
-            <span>Em alta</span>
+        <!-- Fim Carousel Minha lista -->
+
+        <div class="category">
+          <!-- Carousel Em alta -->
+          <span>Em alta</span>
+          <div class="slider">
             <div class="carousel">
               <img
                 src="./src/images/top10/poster_01.jpeg"
@@ -127,9 +144,11 @@
               />
             </div>
           </div>
-          <!-- Fim de Categorias -->
-        </main>
+        </div>
+        <!-- Fim Carousel Em alta -->
+        <!-- Fim de Categorias -->
 
+        <!-- Footer -->
         <footer>
           <div class="social-links">
             <i class="fa-brands fa-facebook-f"></i>
@@ -139,17 +158,36 @@
           </div>
 
           <div class="link-content">
-            <div class="info">
+            <div class="link-content__info">
               <ul>
                 <li>Idioma e legendas</li>
                 <li>Imprensa</li>
                 <li>Privacidade</li>
                 <li>Entre em contato</li>
-                <li>Entre em contato</li>
+              </ul>
+              <ul>
+                <li>Audiodescrição</li>
+                <li>Relações com investidores</li>
+                <li>Avisos legais</li>
+              </ul>
+              <ul>
+                <li>Centro de ajuda</li>
+                <li>Carreiras</li>
+                <li>Preferência de cookies</li>
+              </ul>
+              <ul>
+                <li>Cartão pré-pago</li>
+                <li>Termos de uso</li>
+                <li>informações corporativas</li>
               </ul>
             </div>
-          </div>
-        </footer>
+            <div class="link-content__service">
+              <button class="link-content__service-code">Código do serviço</button>
+            </div>
+            <div class="link-content__copyright">
+              <span>© 1997-2022 Netflix, Inc.&nbsp;&nbsp;&lrm;</span>
+            </div>
+        </footer>  <!-- Fim do Footer -->
       </div>
     </div>
   </body>
