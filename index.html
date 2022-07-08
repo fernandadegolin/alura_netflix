@@ -1,194 +1,275 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Clone Netflix</title>
-    <link rel="stylesheet" href="src/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-  </head>
-  <body>
-    <div class="container">
-      <div class="hero">
-        <div class="header">
-          <div class="logo">
-            <img src="./src/images/logo.jpeg" alt="Logo Netflix" />
-          </div>
 
-          <div class="menu">
-            <div class="menu-left">
-              <ul>
-                <li>Início</li>
-                <li>Séries</li>
-                <li>Filmes</li>
-                <li>Bombando</li>
-                <li>Minha lista</li>
-              </ul>
-            </div>
-            <div class="menu-right">
-              <ul>
-                <li><i class="fas fa-search"></i></li>
-                <li><i class="fas fa-bell"></i></li>
-                <li class="user">
-                  <img src="src/images/user.png" alt="Avatar usuário" />
-                  <i class="fas fa-sort-down"></i>
-                </li>
-              </ul>
-            </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clone Netflix</title>
+  <link rel="stylesheet" href="src/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div class="app__background">
+    <div class="app__hero">
+
+      <!-- Header | Navegação -->
+      <header>
+        <div class="header__logo">
+          <img src="./src/images/logo.jpeg" alt="Logo Netflix" />
+        </div>
+        <div class="header__menu">
+          <div class="header__menu--left">
+            <ul>
+              <li>Início</li>
+              <li>Séries</li>
+              <li>Filmes</li>
+              <li>Bombando</li>
+              <li>Minha lista</li>
+            </ul>
+          </div>
+          <div class="header__menu--right">
+            <ul>
+              <li><i class="fas fa-search"></i></li>
+              <li><i class="fas fa-bell"></i></li>
+              <li class="header__user">
+                <img src="src/images/user.png" alt="Avatar usuário" />
+                <i class="fas fa-sort-down"></i>
+              </li>
+            </ul>
           </div>
         </div>
+      </header>
+      <!-- Fim do Header | Navegação -->
 
+      <!-- Main -->
+      <main>
         <!-- Banner -->
         <div class="banner">
-          <img
-            class="poster"
-            src="./src/images/poster.png"
-            alt="Banner filme
-            Spiderhead"
-          />
-          <span class="subtitle">bla bla bla bla bla</span>
+          <img class="banner__poster" src="./src/images/poster.png" alt="Banner filme
+            Spiderhead" />
+          <span class="banner__subtitle">Em uma penitenciária de última geração, um detento participa de um experimento com drogas que controlam as emoções para um gênio da indústria farmacêutica.</span>
 
-          <div class="buttons">
-            <button type="submit" class="btn_play">
+          <div class="banner__btn">
+            <button type="submit" class="banner__btn--play">
               <i class="fas fa-play"></i>
 
               Assistir
             </button>
-            <button class="btn_info">
-              <i class="fas fa-info"></i>Mais informações
+            <button class="banner__btn--info">
+              <i class="fas fa-thin fa-circle-info"></i>Mais informações
             </button>
           </div>
         </div>
         <!-- Fim do Banner -->
 
-        <!-- Categorias -->
+
+        <!-- Categorias sem animação-->
         <div class="category">
-          <!-- Carousel Minha lista -->
-          <span>Minha lista</span>
-          <div class="slider">
-            <div class="carousel">
-              <img
-                src="./src/images/minha _lista/poster_01.jpeg"
-                alt="BoJack Horseman"
-              />
+          <p class="category__title">Minha lista</p>
+          <section>
+            <div class="item">
+              <img src="./src/images/minha _lista/poster_01.jpeg" alt="BoJack Horseman" />
             </div>
-
-            <div class="carousel">
-              <img
-                src="./src/images/minha _lista/poster_02.jpeg"
-                alt="BoJack Horseman"
-              />
+            <div class="item">
+              <img src="./src/images/minha _lista/poster_02.jpeg" alt="BoJack Horseman" />
             </div>
-            <div class="carousel">
-              <img
-                src="./src/images/minha _lista/poster_03.jpeg"
-                alt="BoJack Horseman"
-              />
+            <div class="item">
+              <img src="./src/images/minha _lista/poster_03.jpeg" alt="BoJack Horseman" />
             </div>
-            <div class="carousel">
-              <img
-                src="./src/images/minha _lista/poster_04.webp"
-                alt="BoJack Horseman"
-              />
+            <div class="item">
+              <img src="./src/images/minha _lista/poster_04.webp" alt="BoJack Horseman" />
             </div>
-            <div class="carousel">
-              <img
-                src="./src/images/minha _lista/poster_05.jpeg"
-                alt="BoJack Horseman"
-              />
+            <div class="item">
+              <img src="./src/images/minha _lista/poster_05.jpeg" alt="BoJack Horseman" />
             </div>
-          </div>
+          </section>
         </div>
-
-        <!-- Fim Carousel Minha lista -->
 
         <div class="category">
           <!-- Carousel Em alta -->
-          <span>Em alta</span>
-          <div class="slider">
-            <div class="carousel">
-              <img
-                src="./src/images/top10/poster_01.jpeg"
-                alt="BoJack Horseman"
-              />
+          <p class='category__title'>Em alta</p>
+          <section>
+            <div class="item">
+              <img src="./src/images/top10/poster_01.jpeg" alt="BoJack Horseman" />
             </div>
-            <div class="carousel">
-              <img
-                src="./src/images/top10/poster_02.jpeg"
-                alt="BoJack Horseman"
-              />
+            <div class="item">
+              <img src="./src/images/top10/poster_02.jpeg" alt="BoJack Horseman" />
             </div>
-            <div class="carousel">
-              <img
-                src="./src/images/top10/poster_03.jpeg"
-                alt="BoJack Horseman"
-              />
+            <div class="item">
+              <img src="./src/images/top10/poster_03.jpeg" alt="BoJack Horseman" />
             </div>
-            <div class="carousel">
-              <img
-                src="./src/images/top10/poster_04.jpeg"
-                alt="BoJack Horseman"
-              />
+            <div class="item">
+              <img src="./src/images/top10/poster_04.jpeg" alt="BoJack Horseman" />
             </div>
-            <div class="carousel">
-              <img
-                src="./src/images/top10/poster_05.jpeg"
-                alt="BoJack Horseman"
-              />
+            <div class="item">
+              <img src="./src/images/top10/poster_05.jpeg" alt="BoJack Horseman" />
             </div>
+          </section>
+        </div>
+
+        <div class="category">
+          <p class="category__title">Séries estrangeiras</p>
+          <section>
+            <div class="item">
+              <img src="./src/images/estrangeiras/poster_01.jpeg" alt="BoJack Horseman" />
+            </div>
+            <div class="item">
+              <img src="./src/images/estrangeiras/poster_02.jpeg" alt="BoJack Horseman" />
+            </div>
+            <div class="item">
+              <img src="./src/images/estrangeiras/poster_03.jpeg" alt="BoJack Horseman" />
+            </div>
+            <div class="item">
+              <img src="./src/images/estrangeiras/poster_04.webp" alt="BoJack Horseman" />
+            </div>
+            <div class="item">
+              <img src="./src/images/estrangeiras/poster_05.jpeg" alt="BoJack Horseman" />
+            </div>
+          </section>
+        </div>
+
+        <div class="category">
+          <p class="category__title">Séries excêntricas de humor ácido</p>
+
+          <div class="wrapper">
+            <section id="section1">
+              <a href="#section3" class="arrow__btn"></a>
+
+              <div class="item">
+                <img
+                  src="https://occ-0-1309-1380.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABYhrJnKt6WzgYoduM5njsQKcmQfzd7x6jS1v_BDElco1wMR6gIifZs9pq1bE7en7AWVzsc6S6cJW7WX4hXAgWzeekl53V5raM0hEKdlfsqqlp-f99K6UWpHAN82hSfaqpn40.jpg?r=0ab"
+                  alt="Describe Image" />
+              </div>
+
+              <div class="item">
+                <img src="./src/images/minha _lista/poster_01.jpeg" alt="Describe Image" />
+              </div>
+
+              <div class="item">
+                <img src="./src/images/minha _lista/poster_01.jpeg" alt="Describe Image" />
+              </div>
+              <div class="item">
+                <img
+                  src="https://occ-0-243-299.1.nflxso.net/dnm/api/v5/rendition/412e4119fb212e3ca9f1add558e2e7fed42f8fb4/AAAABdYtAqj8CyaJTWq5taD8Ro_UgwH3nne9QpFGVps-2J3IG-leqrfqXFii4jzZn48nPYTkrlwKQEV0R7_cEKlYBPRzdKqNODc-Oz26IL3LlLgFboXibIWXwxzeYxzuqn0I9TpARjeByw.jpg"
+                  alt="Describe Image" />
+              </div>
+              <div class="item">
+                <img
+                  src="https://occ-0-243-299.1.nflxso.net/dnm/api/v5/rendition/412e4119fb212e3ca9f1add558e2e7fed42f8fb4/AAAABbcCX42tsqGbBvO2y9CQv5-7QvYbCfoHtXsuc6NPCtZaKa4l4fBX3XWvUwG9F2A3CTsNpHVmulxBbdXKwK8Q6xGjejd9FoadGkZ7CnGrSl601TOQjzSHJ23NuIPC8j0QMGORL4uRIA.jpg"
+                  alt="Describe Image" />
+              </div>
+              <a href="#section2" class="arrow__btn"><i class="fas fa-angle-right"></i></a>
+            </section>
+            <section id="section2">
+              <a href="#section1" class="arrow__btn"><i class="fas fa-angle-left"></i></a>
+              <div class="item">
+                <img
+                  src="https://occ-0-243-299.1.nflxso.net/dnm/api/v5/rendition/412e4119fb212e3ca9f1add558e2e7fed42f8fb4/AAAABVopDZ5Fy9_fk_HO5WxHTXKKjKhtWFupbSjuvPwfLK_vytzon4EwRUdGgYJ34JwPxOTK_NkV3aXfkULMB0Dcct-FyfqzH-X44VXuRMp4QeBHlvKwWeZFpZlGdItPzmmg4scmwhG7SQ.jpg"
+                  alt="Describe Image" />
+              </div>
+              <div class="item">
+                <img
+                  src="https://occ-0-243-299.1.nflxso.net/dnm/api/v5/rendition/412e4119fb212e3ca9f1add558e2e7fed42f8fb4/AAAABTOj1-116yVcgKWMU2dI3GFR4x0fSkiGsqtLLeLUxRR7STaksjAqBTrYlTfrB8nIGnGvXksi0ewXAhVGg6-pLxpFOIfcpjK-pf8D5xehFZo5a6vJbo4L0AGbrzglbyUoq255QBJgRQ.jpg"
+                  alt="Describe Image" />
+              </div>
+              <div class="item">
+                <img
+                  src="https://occ-0-243-299.1.nflxso.net/dnm/api/v5/rendition/a76057bcfd003711a76fb3985b1f2cf74beee3b8/AAAABd3IBDpxbRcHXvRMFCZeKa2aHLU1P4SJtrACMS9om3yhLjqPlvNlmR_fypPxjtbsbnKaC4JZhPSpDG4r_kdxSHHAltWguMcCB-1Y1OShr2zWfUv7Whf_39fNH5ZJ3_0gxQrs0akmQjQz44_LT7jXH5LMZ7iMBAzac5IEj4m7Fn_5OWEGYnVsDsKG-QTommDooULMDF9bEw.jpg"
+                  alt="Describe Image" />
+              </div>
+              <div class="item">
+                <img
+                  src="https://occ-0-243-299.1.nflxso.net/dnm/api/v5/rendition/a76057bcfd003711a76fb3985b1f2cf74beee3b8/AAAABXSd7bhDddcwkq9XpksoQFCHVx29Sxl_h4hb2n3F2GIt32a4XWcOnctQfgnT5qdolv8UML6_xNB5CJ89h56wueb13mYmEBr0sx5e9iLPdtVcOQAOmKXKWHHXwFvJuCUwuNnL3s8eAQwqLXPVMHMEsujM684rUGrZNF2btN2GRy5-RyEslsxZO93V2Q_H2bWs8A8oayt1h5M.webp"
+                  alt="Describe Image" />
+              </div>
+              <div class="item">
+                <img
+                  src="https://occ-0-243-299.1.nflxso.net/dnm/api/v5/rendition/a76057bcfd003711a76fb3985b1f2cf74beee3b8/AAAABbXWODpAWqVXcmmjMA7K-2mPkQpvwCLfSdeyhVXzR8A3MSpdSEnnjf4HEJJTYC-TnktU6njTUGAxmzWEYCaJbk4v_ZeL-7QGzmkvYBjg_N-evr2XmcX-Fanoyvu_nimFP4iigPe4O3Vr_WcgplhwkDrJwPUJa84wRLrNAx3TufN5V7cWRP4indqu5HQahvgFEqfL9zjp4g.jpg"
+                  alt="Describe Image" />
+              </div>
+              <a href="#section3" class="arrow__btn"><i class="fas fa-angle-right"></i></a>
+            </section>
+            <section id="section3">
+              <a href="#section2" class="arrow__btn"><i class="fas fa-angle-left"></i></a>
+              <div class="item">
+                <img
+                  src="https://occ-0-243-299.1.nflxso.net/dnm/api/v5/rendition/412e4119fb212e3ca9f1add558e2e7fed42f8fb4/AAAABRr4YxdaABuAuH_3FmSQZn7BCvLp-UUPsXE9MiYpvFP3CSUHV2zOew5oVqKqqdaOd3tbFVS0Uf67uIs7_eZydlCghg4nK0nMatRpPImABwTOhnNzCLCxdKrua7pPIcPCZqBYTeAO5g.jpg"
+                  alt="Describe Image" />
+              </div>
+              <div class="item">
+                <img
+                  src="https://occ-0-243-299.1.nflxso.net/dnm/api/v5/rendition/412e4119fb212e3ca9f1add558e2e7fed42f8fb4/AAAABTyWK1MKaw8GcObtz47R2Tj7wkLJ7qQu9tk6TVpcoyxpzD4B-zZ569bQ5vGrREBL-MWFkGilXUwy7tCDaj2XOGkUB4RsbbFAmp9NgSr6lygMpUGNHSlyfrFbUORsRkrxSIoh_ggOvg.jpg"
+                  alt="Describe Image" />
+              </div>
+              <div class="item">
+                <img
+                  src="https://occ-0-243-299.1.nflxso.net/dnm/api/v5/rendition/a76057bcfd003711a76fb3985b1f2cf74beee3b8/AAAABY7NwkWEJIfXsn6t3Li4bGSCQ1nEErPisI5ZZtXlC-_VRBZOUrhWK5X3vt3t6SR_cpgVhCwxgQqFFDJhk62Kk8hawOnYGZMr0LKeLczMFV2zalCFjkcdLksvT4HB2LEi6LFyruyk3Uu0LmNGsHfC2A8Bly60smr_3sDbz4RruXcklPOG1qYq9wUVu3zfaiwNvqmG4b8aFA.jpg"
+                  alt="Describe Image" />
+              </div>
+              <div class="item">
+                <img
+                  src="https://occ-0-243-299.1.nflxso.net/dnm/api/v5/rendition/a76057bcfd003711a76fb3985b1f2cf74beee3b8/AAAABemXHOga9feFnOux6I2YyACBD94wvM7N3vcTGIfMpQ_BcaXeoeM9XyzdVdamKtxt0SHXZfvsl6czcp3E48tXMLtHBxuQsh1BjHtPGgJDZ81je_FjItINiqzLtir0A30s_e4KR8G3d7AYAPDjZVOY97bNpzNqtkcHcGp7fGnJByVCps1uLfG9U9tK3Ma1A_3JbRt0NiT2_Q.jpg"
+                  alt="Describe Image" />
+              </div>
+              <div class="item">
+                <img
+                  src="https://occ-0-243-299.1.nflxso.net/dnm/api/v5/rendition/a76057bcfd003711a76fb3985b1f2cf74beee3b8/AAAABVxuRB932hvre-XP0gh6ar5ztoR3Oe3QjKHkyvcDnRak2MKXOrx5H7mFQSvggefMFOppwEs7ZCCpiqrJ_CYGvtvYB9NpU4SWUtNO6uV2u-DTID267AcHjHcGvGBQJ1ufddDkxcGOZyi5MlOQ5QUmBun4652FbYUnib3zMYQDgcna_Pvz8y_HO5fbokxezrRR1JZAAiqFSQ.jpg"
+                  alt="Describe Image" />
+              </div>
+              <a href="#section1" class="arrow__btn"><i class="fas fa-angle-right"></i></a>
+            </section>
           </div>
         </div>
-        <!-- Fim Carousel Em alta -->
-        <!-- Fim de Categorias -->
+      </main>
+      <!-- Fim do Carousel -->
 
-        <!-- Footer -->
-        <footer>
-          <div class="social-links">
-            <i class="fa-brands fa-facebook-f"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-youtube"></i>
+      <!-- Footer -->
+      <footer>
+        <div class="social-links">
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-youtube"></i>
+        </div>
+
+        <div class="link-content">
+          <div class="link-content__info">
+            <ul>
+              <li>Idioma e legendas</li>
+              <li>Imprensa</li>
+              <li>Privacidade</li>
+              <li>Entre em contato</li>
+            </ul>
+            <ul>
+              <li>Audiodescrição</li>
+              <li>Relações com investidores</li>
+              <li>Avisos legais</li>
+            </ul>
+            <ul>
+              <li>Centro de ajuda</li>
+              <li>Carreiras</li>
+              <li>Preferência de cookies</li>
+            </ul>
+            <ul>
+              <li>Cartão pré-pago</li>
+              <li>Termos de uso</li>
+              <li>informações corporativas</li>
+            </ul>
           </div>
-
-          <div class="link-content">
-            <div class="link-content__info">
-              <ul>
-                <li>Idioma e legendas</li>
-                <li>Imprensa</li>
-                <li>Privacidade</li>
-                <li>Entre em contato</li>
-              </ul>
-              <ul>
-                <li>Audiodescrição</li>
-                <li>Relações com investidores</li>
-                <li>Avisos legais</li>
-              </ul>
-              <ul>
-                <li>Centro de ajuda</li>
-                <li>Carreiras</li>
-                <li>Preferência de cookies</li>
-              </ul>
-              <ul>
-                <li>Cartão pré-pago</li>
-                <li>Termos de uso</li>
-                <li>informações corporativas</li>
-              </ul>
-            </div>
-            <div class="link-content__service">
-              <button class="link-content__service-code">Código do serviço</button>
-            </div>
-            <div class="link-content__copyright">
-              <span>© 1997-2022 Netflix, Inc.&nbsp;&nbsp;&lrm;</span>
-            </div>
-        </footer>  <!-- Fim do Footer -->
-      </div>
+          <div class="link-content__service">
+            <button class="link-content__service-code">Código do serviço</button>
+          </div>
+          <div class="link-content__copyright">
+            <span>© 1997-2022 Netflix, Inc.&nbsp;&nbsp;&lrm;</span>
+          </div>
+      </footer> 
+      <!-- Fim do Footer -->
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
