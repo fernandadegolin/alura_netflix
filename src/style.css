@@ -150,7 +150,7 @@ main {
   margin-right: 0.5rem;
 }
 
-/* === Categorias sem animação=== */
+/* === Trilho sem animação=== */
 .category {
   height: 200px;
 }
@@ -162,7 +162,6 @@ main {
   font-weight: 600;
 }
 
-/* === Carousel  === */
 .wrapper {
   display: grid;
   grid-template-columns: repeat(3, 100%);
