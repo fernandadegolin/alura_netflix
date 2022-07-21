@@ -31,7 +31,6 @@ body {
 }
 
 /* === Header | Navegação === */
-
 header {
   display: flex;
   align-items: center;
@@ -184,7 +183,7 @@ section {
   transition: 250ms all;
 }
 
-.item:hover {
+.-animation:hover {
   margin: 0 40px;
   transform: scale(1.2);
 }
