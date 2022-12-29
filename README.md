@@ -7,7 +7,7 @@
 <head>
   <meta charset="UTF-8" />
   <title>Clone Netflix</title>
-  <link rel="stylesheet" href="src/style.css" />
+  <link rel="stylesheet" href="src/style.css" /> 
 </head>
 
 <body>
